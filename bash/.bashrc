@@ -24,7 +24,7 @@ alias df='df -h'
 alias ll='exa -al --color=always --group-directories-first'
 alias upall='sudo dnf update --refresh -y && flatpak update -y'
 alias speed='speedtest-cli'
-
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
 #shopt
 shopt -s autocd
 shopt -s cdspell
