@@ -21,5 +21,5 @@ export HISTFILE="$XDG_STATE_HOME"/bash/history
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 
-PYTHONPATH=/home/matt/.local/bin
+PYTHONPATH=~/.local/bin
 export PYTHON
