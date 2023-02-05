@@ -22,7 +22,8 @@ alias nf='neofetch'
 alias cc='clear'
 alias df='df -h'
 alias ll='exa -al --color=always --group-directories-first'
-alias upall='sudo dnf update --refresh -y && flatpak update -y'
+alias lt='exa --tree --level=2 --icons'
+alias upall='sudo pacman -Syu && flatpak update'
 alias speed='speedtest-cli'
 alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
 #shopt
@@ -42,7 +43,6 @@ export XDG_STATE_HOME=${XDG_STATE_HOME:="$HOME/.local/state"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 #Disable Files
 export LESSHISTFILE=-
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
