@@ -44,8 +44,6 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -b
 #Starts Network Manager on Launch
 exec --no-startup-id nm-applet
-#Xset Key Repeat Rate Script
-exec_always --no-startup-id $HOME/scripts/xset-rate.sh
 #Launch Vorta on Login
 exec --no-startup-id vorta
 #Xset Key Repeat Rate Script
