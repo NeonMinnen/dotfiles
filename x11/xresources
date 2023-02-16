@@ -1,0 +1,14 @@
+Xcursor.size: 16
+Xft.dpi: 109
+Xft.hinting: 1
+xft.autohint: 0
+Xft.hintstyle: hintslight
+Xft.antialias: 1
+
+
+
+Sxiv.background: #3c3836
+
+Sxiv.foreground: #a89984
+
+Sxiv.font: Terminus Medium 10
