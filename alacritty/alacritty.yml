@@ -28,7 +28,7 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 130
+    columns: 100
     lines: 40
 
   # Window position (changes require restart)
@@ -56,12 +56,12 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  decorations: none
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: 0.9
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -73,7 +73,7 @@ window:
   #   - SimpleFullscreen
   #startup_mode: Windowed
   #Window title
-  title: basedterminal
+  title: xxx
 
   # Allow terminal applications to change Alacritty's window title.
   #dynamic_title: true
@@ -98,18 +98,18 @@ window:
 # Font configuration
 font:
   normal:
-    family: FiraCode Nerd Font
+    family: Terminus
     style: Regular
   bold:
-    family: FiraCode Nerd Font
+    family: Terminus
     style: Bold
   italic:
-    family: FiraCode Nerd Font
+    family: Terminus
     style: Italic
   bold_italic:
-    family: FiraCode Nerd Font
+    family: Terminus
     style: Bold Italic
-  size: 11.0
+  size: 12.0
   #builtin_box_drawing: true
   # If `true`, bold text is drawn using the bright color variants.
   #draw_bold_text_with_bright_colors: false
@@ -573,87 +573,78 @@ font:
   #   - Debug
   #   - Trace
   #log_level: Warn
-
   # Print all received window events.
+colors:
+  primary:
+    background: '#282828'
+    foreground: '#ebdbb2'
+    dim_foreground: '#928374'
+    bright_foreground: '#ebdbb2'
+
+  cursor:
+    text: '#1d2021'
+    cursor: '#ebdbb2'
+
+  vi_mode_cursor:
+    text: '#1d2021'
+    cursor: '#ebdbb2'
+
+  search:
+    matches:
+      foreground: '#1d2021'
+      background: '#98971a'
+
+    focused_match:
+      foreground: '#1d2021'
+      background: '#fabd2f'
+
+    footer_bar:
+      background: '#b16286'
+      foreground: '#1d2021'
+
+  hints:
+    start:
+      foreground: '#010816'
+      background: '#E99440'
+
+    end:
+      foreground: '#E99440'
+      background: '#010816'
+
+  line_indicator:
+    foreground: None
+    background: None
+
+  selection:
+    text: CellBackground
+    background: CellForeground
+
+  normal:
+    black:   '#1d2021'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
+
+  bright:
+    black:   '#928374'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
 # Colors (Tokyo Night)
 # Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
-
 # Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
 # Copyright (c) 2017-present Sven Greb <code@svengreb.de>
-
 # Project:    Nord Alacritty
 # Version:    0.1.0
 # Repository: https://github.com/arcticicestudio/nord-alacritty
 # License:    MIT
 # References:
 #   https://github.com/alacritty/alacritty
-
-colors:
-  primary:
-    background: '#2e3440'
-    foreground: '#d8dee9'
-    dim_foreground: '#a5abb6'
-  cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  vi_mode_cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  selection:
-    text: CellForeground
-    background: '#4c566a'
-  search:
-    matches:
-      foreground: CellBackground
-      background: '#88c0d0'
-    bar:
-      background: '#434c5e'
-      foreground: '#d8dee9'
-  normal:
-    black: '#3b4252'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#88c0d0'
-    white: '#e5e9f0'
-  bright:
-    black: '#4c566a'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#8fbcbb'
-    white: '#eceff4'
-  dim:
-    black: '#373e4d'
-    red: '#94545d'
-    green: '#809575'
-    yellow: '#b29e75'
-    blue: '#68809a'
-    magenta: '#8c738c'
-    cyan: '#6d96a5'
-    white: '#aeb3bb'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

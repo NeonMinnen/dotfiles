@@ -1,8 +1,10 @@
 #
 # ~/.bash_profile
 #
+if [ -f $HOME/.bashrc ]; then
+        source $HOME/.bashrc
+fi
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
 #Ninja-XDG Env Variables
@@ -20,6 +22,8 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-
+export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 PYTHONPATH=~/.local/bin
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export PYTHON
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
