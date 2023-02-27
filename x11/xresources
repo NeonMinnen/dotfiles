@@ -1,14 +1,11 @@
 Xcursor.size: 16
 Xft.dpi: 109
 Xft.hinting: 1
-xft.autohint: 0
 Xft.hintstyle: hintslight
 Xft.antialias: 1
-
-
-
-Sxiv.background: #3c3836
-
-Sxiv.foreground: #a89984
-
-Sxiv.font: Terminus Medium 10
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+! Sxiv
+Sxiv.background: #16161d
+Sxiv.foreground: #9aa5ce 
+Sxiv.font: Monospace:size=9

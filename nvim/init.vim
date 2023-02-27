@@ -24,7 +24,8 @@ Plug 'https://github.com/christoomey/vim-system-copy'
 Plug 'https://github.com/kdheepak/monochrome.nvim'
 Plug 'shaunsingh/nord.nvim'
 Plug 'https://github.com/ellisonleao/gruvbox.nvim'
+Plug 'https://github.com/folke/tokyonight.nvim'
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+colorscheme tokyonight-night
