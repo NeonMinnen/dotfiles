@@ -44,8 +44,7 @@ alias speed='speedtest-cli'
 alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
 alias music="ncmpcpp"
 alias conf='cd ~/.config'
-
-
+alias monerod='monerod --data-dir "$XDG_DATA_HOME"/bitmonero'
 # Merge Xresources
 alias merge='xrdb -merge ~/.config/x11/xresources'
 
@@ -85,3 +84,4 @@ export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
 export ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export ANSIBLE_HOME="$(dirname "$XDG_CONFIG_HOME/ansible")"
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
