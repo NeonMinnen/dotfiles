@@ -1,10 +1,8 @@
 #
 # ~/.bashrc
 #
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
 
 ## Export
 export TERM="xterm-256color"    
@@ -22,7 +20,6 @@ PS1='[\u@\h \W]\$ '
 
 #Starship
 eval "$(starship init bash)"
-
 
 unset rc
 
@@ -45,22 +42,20 @@ alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settin
 alias music="ncmpcpp"
 alias conf='cd ~/.config'
 alias monerod='monerod --data-dir "$XDG_DATA_HOME"/bitmonero'
+
 # Merge Xresources
 alias merge='xrdb -merge ~/.config/x11/xresources'
-
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-
 #shopt
 shopt -s autocd
 shopt -s cdspell
 shopt -s histappend # do not overwrite history
 shopt -s cmdhist # save multi-line commands in history as single line
-
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
@@ -75,6 +70,7 @@ export XDG_DATA_HOME="${XDG_LOCAL_HOME}/share"
 export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_STATE_HOME="${HOME}/.local/state"
+
 # Dot File Cleanup
 export LESSHISTFILE=-
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
