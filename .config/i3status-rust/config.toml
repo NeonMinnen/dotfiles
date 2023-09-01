@@ -1,0 +1,58 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "solarized-dark"
+
+[icons]
+icons = "awesome4"
+
+[[block]]
+block = "pacman"
+interval = 600
+error_interval = 300
+format = " $icon $pacman + $aur = $both updates available "
+format_singular = " $icon $both update available "
+format_up_to_date = " $icon system up to date "
+critical_updates_regex = "(linux|linux-lts|linux-zen)"
+# aur_command should output available updates to stdout (ie behave as echo -ne "update\n")
+aur_command = "paru -Qua"
+
+[[block]]
+block = "nvidia_gpu"
+interval = 1
+format = " $icon GPU $temperature "
+idle = 60
+
+[[block]]
+block = "cpu"
+interval = 1
+format = " $icon $utilization "
+format_alt = " $icon $frequency{ $boost|} "
+
+
+[[block]]
+block = "memory"
+format = " $icon $mem_used.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "available"
+alert_unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+format = " $icon root: $available.eng(w:2) "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %m/%d %R') "
+
