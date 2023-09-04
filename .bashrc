@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 
 ###PROFILE
@@ -31,7 +30,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export BAT_THEME="base16-256"
-#alias ls='ls --color=auto'
 
 #Bash Prompt
 #PS1='[\u@\h \W]\$ '
@@ -57,14 +55,12 @@ alias cat='bat'
 alias free='free -m' # show sizes in MB
 alias x='sxiv -t *'
 alias nb='newsboat'
+
 #Exa Alias
 alias ll='exa --all --long --color=auto --icons --group-directories-first'
 alias la='exa --grid --all --color auto --icons --sort=type'
 alias lt='exa --tree --level=2 --icons'
 alias ls='exa --grid --color auto --icons --sort=type'
-
-#Bare Git Repo for Dots
-alias config='/usr/bin/git --git-dir=$HOME/$DOTFILES/ --work-tree=$HOME'
 
 #More Random Alias
 alias speed='speedtest-cli'

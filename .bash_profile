@@ -1,16 +1,13 @@
-#
 # ~/.bash_profile
 #
 if [ -f $HOME/.bashrc ]; then
         source $HOME/.bashrc
 fi
 
+#Use Startx
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 startx
 fi
-
-# QT5 qt5ct
-export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Set XDG Base Directory
 #   - https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
@@ -33,6 +30,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
 
-PYTHONPATH=~/.local/bin
-export PYTHON
+# QT5 qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
