@@ -11,7 +11,7 @@
 :set termguicolors
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-let g:airline_theme='base16_grayscale_dark
+let g:airline_theme='base16_grayscale_dark'
 
 call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline'
