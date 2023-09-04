@@ -1,15 +1,14 @@
 #TERM: 
 alacritty window:
-   dimensions:
-     columns: 133
-     lines: 50
-  # The value `0.0` is completely transparent and `1.0` is opaque.
+  dimensions:
+    columns: 133
+    lines: 50
+# The value `0.0` is completely transparent and `1.0` is opaque.
 opacity: 1.0
-  #scrolling:
-  # Maximum number of lines in the scrollback buffer. Specifying '0' will disable scrolling.
-  #history: 10000
-  # Scrolling distance multiplier. multiplier: 5
-
+#scrolling:
+# Maximum number of lines in the scrollback buffer. Specifying '0' will disable scrolling.
+#history: 10000
+# Scrolling distance multiplier. multiplier: 5
 # Font configuration
 font:
   normal:
@@ -26,44 +25,56 @@ font:
     style: Bold Italic
   size: 11.0
 
-
   draw_bold_text_with_bright_colors: true
 
-  #
   # - `mods` (see key bindings)
   mouse_bindings:
     #  - { mouse: Right,                 action: ExpandSelection }
     #  - { mouse: Right,  mods: Control, action: ExpandSelection }
     - { mouse: Middle, action: PasteSelection }
-    - { key: V,      mods: Control|Shift,                  action: Paste             }
-    - { key: C,      mods: Control|Shift,                  action: Copy              }
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
   # Key bindings
-# Colors (Solarized Dark)
+# Base16 Grayscale Dark 256 - alacritty color config
+# Alexandre Gavioli (https://github.com/Alexx2/)
 colors:
   # Default colors
   primary:
-    background: '0x002b36'
-    foreground: '0x839496'
+    background: '0x101010'
+    foreground: '0xb9b9b9'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x101010'
+    cursor: '0xb9b9b9'
 
   # Normal colors
   normal:
-    black:   '0x073642'
-    red:     '0xdc322f'
-    green:   '0x859900'
-    yellow:  '0xb58900'
-    blue:    '0x268bd2'
-    magenta: '0xd33682'
-    cyan:    '0x2aa198'
-    white:   '0xeee8d5'
+    black:   '0x101010'
+    red:     '0x7c7c7c'
+    green:   '0x8e8e8e'
+    yellow:  '0xa0a0a0'
+    blue:    '0x686868'
+    magenta: '0x747474'
+    cyan:    '0x868686'
+    white:   '0xb9b9b9'
 
   # Bright colors
   bright:
-    black:   '0x002b36'
-    red:     '0xcb4b16'
-    green:   '0x586e75'
-    yellow:  '0x657b83'
-    blue:    '0x839496'
-    magenta: '0x6c71c4'
-    cyan:    '0x93a1a1'
-    white:   '0xfdf6e3'
+    black:   '0x525252'
+    red:     '0x7c7c7c'
+    green:   '0x8e8e8e'
+    yellow:  '0xa0a0a0'
+    blue:    '0x686868'
+    magenta: '0x747474'
+    cyan:    '0x868686'
+    white:   '0xf7f7f7'
+
+  indexed_colors:
+    - { index: 16, color: '0x999999' }
+    - { index: 17, color: '0x5e5e5e' }
+    - { index: 18, color: '0x252525' }
+    - { index: 19, color: '0x464646' }
+    - { index: 20, color: '0xababab' }
+    - { index: 21, color: '0xe3e3e3' }
 
