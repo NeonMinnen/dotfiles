@@ -18,14 +18,12 @@ Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/alvan/vim-closetag'
 Plug 'https://github.com/mhinz/vim-startify'
 Plug 'https://github.com/nvim-treesitter/nvim-treesitter'
-Plug 'overcache/NeoSolarized'
-Plug 'https://github.com/ellisonleao/gruvbox.nvim'
 Plug 'https://github.com/christoomey/vim-system-copy'
 Plug 'https://github.com/kdheepak/monochrome.nvim'
-Plug 'shaunsingh/nord.nvim'
-Plug 'https://github.com/ellisonleao/gruvbox.nvim'
+Plug 'overcache/NeoSolarized'
+Plug 'metalelf0/base16-black-metal-scheme'
 call plug#end()
 
 set background=dark
-colorscheme monochrome
+colorscheme base16-black-metal-burzum
 
