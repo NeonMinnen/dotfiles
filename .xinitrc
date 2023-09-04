@@ -57,6 +57,7 @@ nitrogen --restore & # this is to set an image background
 picom -b & #picom
 exec solaar --window hide & #Solaar for Mouse DPI Fix
 dwmblocks & #exec dwmblocks
+dunst & #exec dunst
 # loop
 while true; do
 	dwm > /dev/null 2<&1
