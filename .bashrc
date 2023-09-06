@@ -31,9 +31,6 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export BAT_THEME="base16-256"
 
-#Bash Prompt
-#PS1='[\u@\h \W]\$ '
-
 #Starship
 eval "$(starship init bash)"
 
@@ -47,6 +44,10 @@ export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
 export FZF_DEFAULT_OPTS='-i --height=40%'
 
 ##ALIAS##
+alias rm='rm -vI'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias mkdir='mkdir -pv'
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 alias nf='neofetch'
 alias cc='clear'
