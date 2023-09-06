@@ -11,7 +11,7 @@
 :set termguicolors
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-let g:airline_theme='base16_grayscale_dark'
+let g:airline_theme='base16_chalk'
 
 call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -27,8 +27,7 @@ Plug 'https://github.com/kdheepak/monochrome.nvim'
 Plug 'overcache/NeoSolarized'
 Plug 'danishprakash/vim-yami'
 Plug 'chriskempson/base16-vim'
-Plug 'metalelf0/base16-black-metal-scheme'
 call plug#end()
 
 set background=dark
-colorscheme base16-grayscale-dark
+colorscheme base16-chalk
