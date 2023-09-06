@@ -55,7 +55,7 @@ alias cat='bat'
 alias free='free -m' # show sizes in MB
 alias x='sxiv -t *'
 alias nb='newsboat'
-
+alias z='zathura'
 #Exa Alias
 alias ll='exa --all --long --color=auto --icons --group-directories-first'
 alias la='exa --grid --all --color auto --icons --sort=type'

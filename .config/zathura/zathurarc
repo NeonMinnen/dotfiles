@@ -58,6 +58,14 @@ set recolor-keephue "true"
 
 set render-loading "false"
 set scroll-step 50
+
+#Keybindings
 unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
+map i recolor
+map r reload
+map u scroll half-up
+map d scroll half-down
+
+
