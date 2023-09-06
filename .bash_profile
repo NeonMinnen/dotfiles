@@ -34,4 +34,3 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 # QT5 qt5ct
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
