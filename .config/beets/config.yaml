@@ -1,0 +1,31 @@
+plugins: discogs fetchart
+
+directory: /mnt/Synology/Music/Beets/Beets(Organized)
+library: ~/.config/beets/library.db
+art_filename: albumart
+threaded: yes
+per_disc_numbering: no
+
+
+paths:
+    default: $albumartist/($year) - $album%aunique{}/$track - $title
+    singleton: Non-Album/$artist - $title
+    comp: Compilations/($year) - $album%aunique{}/$track - $title
+    albumtype_soundtrack: Soundtracks/$album/$track $title
+
+
+
+import:
+  write: yes
+  copy: no
+  move: yes
+  resume: ask
+  incremental: no
+  quiet_fallback: skip
+  timid: no
+
+discogs:
+    index_tracks: yes
+
+
+
