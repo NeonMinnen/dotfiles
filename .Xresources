@@ -5,8 +5,7 @@ Xft.hintstyle: hintslight
 Xft.antialias: 1
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-
-
+*.font:	JetBrains Mono:pixelsize=16:antialias=true:autohint=true;
 ! Base16 Chalk
 ! Scheme: Chris Kempson (http://chriskempson.com)
 
