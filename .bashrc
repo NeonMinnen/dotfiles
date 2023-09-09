@@ -61,10 +61,10 @@ alias x='sxiv -t *'
 alias nb='newsboat'
 alias z='zathura'
 #Exa Alias
-alias ll='exa --all --long --color=auto --icons --group-directories-first'
-alias la='exa --grid --all --color auto --icons --sort=type'
-alias lt='exa --tree --level=2 --icons'
-alias ls='exa --grid --color auto --icons --sort=type'
+alias ll='eza --all --long --color=auto --icons --group-directories-first'
+alias la='eza --grid --all --color auto --icons --sort=type'
+alias lt='eza --tree --level=2 --icons'
+alias ls='eza --grid --color auto --icons --sort=type'
 
 #More Random Alias
 alias speed='speedtest-cli'
