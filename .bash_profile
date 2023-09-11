@@ -34,3 +34,6 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 # QT5 qt5ct
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+#Starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
