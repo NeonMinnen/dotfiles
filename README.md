@@ -1,3 +1,3 @@
 # dotfiles
-Just my dots!
+Just my dotsfiles.
 Arch && DWM for now.
