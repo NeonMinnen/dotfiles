@@ -11,3 +11,17 @@ song_library_format = {%n - }{%t}|{%f}
 
 playlist_display_mode = columns
 browser_display_mode = columns
+
+external_editor = nvim
+use_console_editor = yes
+empty_tag_color = green
+main_window_color = red
+progressbar_color = black:b
+progressbar_elapsed_color = blue:b
+statusbar_color = red
+statusbar_time_color = cyan:b
+current_item_prefix = $(cyan)$r$b
+current_item_suffix = $/r$(end)$/b
+current_item_inactive_column_prefix = $(magenta)$r
+current_item_inactive_column_suffix = $/r$(end)
+ignore_leading_the = yes
