@@ -9,10 +9,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 elif [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
 fi
-#Find dir_colors
-if [ -f ~/.dir_colors ]; then
-    eval `dircolors ~/.dir_colors`
-fi
 
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
