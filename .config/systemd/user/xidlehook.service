@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatic Screen Locker
+
+[Service]
+Type=simple
+Environment=DISPLAY=:1
+Environment=XIDLEHOOK_SOCK=%t/xidlehook.socket
+ExecStart=/usr/bin/xidlehook --not-when-audio --not-when-fullscreen --socket $XIDLEHOOK_SOCK --timer 300 '/usr/bin/slock' '' --timer 3600 'systemctl suspend' ''
+[Install]
+WantedBy=multi-user.target
