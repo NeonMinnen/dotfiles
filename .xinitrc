@@ -26,7 +26,6 @@ export SSH_AUTH_SOCK
 xrdb -merge ~/.Xresources
 xset r rate 200 50 & #sets key speed
 nitrogen --restore & # this is to set an image background
-xautolock -time 5 -locker slock -nowlocker slock -detectsleep -corners 000+ -cornerdelay 3 -killtime 60 -killer "systemctl suspend" & #lock & suspend
 picom -b & #picom
 exec solaar --window hide & #Solaar for Mouse DPI Fix
 dwmblocks & #exec dwmblocks
