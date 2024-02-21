@@ -22,13 +22,38 @@ export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
 export TERMINAL="st"
 export PATH=$PATH:$HOME/.local/bin
 export BROWSER="firefox"
-export MUSIC_DIR="/mnt/Synology/Music"
 export MPD_HOST="localhost"
 export MPD_PORT="6600"
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export BAT_THEME="base16-256"
+
+#XDG Vars
+export XDG_LOCAL_HOME="${HOME}/.local"
+export XDG_DATA_HOME="${XDG_LOCAL_HOME}/share"
+export XDG_CONFIG_HOME="${HOME}/.config"
+export XDG_CACHE_HOME="${HOME}/.cache"
+export XDG_STATE_HOME="${HOME}/.local/state"
+
+# Disable Home Dir Clutter
+export LESSHISTFILE=-
+export HISTFILE="${XDG_STATE_HOME}"/bash/history
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export HISTFILE="$XDG_STATE_HOME"/bash/history
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
+export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+# QT5 qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+#Starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 #Starship
 eval "$(starship init bash)"
@@ -56,6 +81,7 @@ alias free='free -m' # show sizes in MB
 alias x='sxiv -t *'
 alias nb='newsboat'
 alias z='zathura'
+alias f='yazi'
 #Exa Alias
 alias ll='eza --all --long --color=auto --icons --group-directories-first'
 alias la='eza --grid --all --color auto --icons --sort=type'

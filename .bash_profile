@@ -30,7 +30,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
-
 # QT5 qt5ct
 export QT_QPA_PLATFORMTHEME=qt5ct
 
