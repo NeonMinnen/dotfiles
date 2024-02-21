@@ -1,8 +1,5 @@
 # ~/.bashrc
 
-###PROFILE
-[[ -e ~/.profile ]] && source ~/.profile
-
 # Enable bash programmable completion features in interactive shells
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
@@ -13,12 +10,10 @@ fi
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
-## Export
-export TERM="xterm-256color" 
-export TERM="screen-256color"       # for a tmux -2 session (also for screen)
-export TERM="rxvt-unicode-256color" # for a colorful rxvt unicode session
+# Set environment variables
+export TERM="xterm-256color"
 export EDITOR="nvim"
-export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
+export HISTCONTROL=ignoredups:erasedups
 export TERMINAL="st"
 export PATH=$PATH:$HOME/.local/bin
 export BROWSER="firefox"
@@ -38,27 +33,20 @@ export XDG_STATE_HOME="${HOME}/.local/state"
 
 # Disable Home Dir Clutter
 export LESSHISTFILE=-
-export HISTFILE="${XDG_STATE_HOME}"/bash/history
-export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-export CARGO_HOME="$XDG_DATA_HOME"/cargo
-export HISTFILE="$XDG_STATE_HOME"/bash/history
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
-export ANSIBLE_HOME="$XDG_DATA_HOME"/ansible
-export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
-# QT5 qt5ct
-export QT_QPA_PLATFORMTHEME=qt5ct
+export HISTFILE="${XDG_STATE_HOME}/bash/history"
+export CUDA_CACHE_PATH="${XDG_CACHE_HOME}/nv"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
+export CARGO_HOME="${XDG_DATA_HOME}/cargo"
+export XAUTHORITY="${XDG_RUNTIME_DIR}/Xauthority"
+export ICEAUTHORITY="${XDG_CACHE_HOME}/ICEauthority"
+export ANSIBLE_HOME="${XDG_DATA_HOME}/ansible"
+export WGETRC="${XDG_CONFIG_HOME}/wget/wgetrc"
 
 #Starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 #Starship
 eval "$(starship init bash)"
-
-unset rc
 
 ##auto start neofetch when bash opens
 neofetch
@@ -82,6 +70,7 @@ alias x='sxiv -t *'
 alias nb='newsboat'
 alias z='zathura'
 alias f='yazi'
+
 #Exa Alias
 alias ll='eza --all --long --color=auto --icons --group-directories-first'
 alias la='eza --grid --all --color auto --icons --sort=type'
