@@ -10,13 +10,16 @@ fi
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
+
 # Set environment variables
-export TERM="xterm-256color"
+export TERM="xterm-256color" 
+export TERM="screen-256color"       # for a tmux -2 session (also for screen)
 export EDITOR="nvim"
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
 export TERMINAL="st"
 export PATH=$PATH:$HOME/.local/bin
 export BROWSER="firefox"
+export MUSIC_DIR="/mnt/Synology/Music"
 export MPD_HOST="localhost"
 export MPD_PORT="6600"
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
@@ -42,18 +45,19 @@ export ICEAUTHORITY="${XDG_CACHE_HOME}/ICEauthority"
 export ANSIBLE_HOME="${XDG_DATA_HOME}/ansible"
 export WGETRC="${XDG_CONFIG_HOME}/wget/wgetrc"
 
-#Starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-
-#Starship
-eval "$(starship init bash)"
-
-##auto start neofetch when bash opens
-neofetch
 
 #FZF
 export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
 export FZF_DEFAULT_OPTS='-i --height=40%'
+
+
+#Starship
+eval "$(starship init bash)"
+
+unset rc
+
+##auto start neofetch when bash opens
+neofetch
 
 ##ALIAS##
 alias rm='rm -vI'
@@ -69,7 +73,6 @@ alias free='free -m' # show sizes in MB
 alias x='sxiv -t *'
 alias nb='newsboat'
 alias z='zathura'
-alias f='yazi'
 
 #Exa Alias
 alias ll='eza --all --long --color=auto --icons --group-directories-first'
