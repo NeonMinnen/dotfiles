@@ -125,3 +125,4 @@ shopt -s cmdhist # save multi-line commands in history as single line
 bind "set completion-ignore-case on"
 
 
+source <(gopass completion bash)
