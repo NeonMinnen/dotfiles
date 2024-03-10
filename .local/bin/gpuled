@@ -1,0 +1,2 @@
+#! /usr/bin/bash
+nvidia-settings --assign GPULogoBrightness=0
