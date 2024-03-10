@@ -26,7 +26,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export BAT_THEME="base16-256"
-
 #XDG Vars
 export XDG_LOCAL_HOME="${HOME}/.local"
 export XDG_DATA_HOME="${XDG_LOCAL_HOME}/share"
@@ -125,4 +124,3 @@ shopt -s cmdhist # save multi-line commands in history as single line
 bind "set completion-ignore-case on"
 
 
-source <(gopass completion bash)
