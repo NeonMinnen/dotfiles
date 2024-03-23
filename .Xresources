@@ -7,7 +7,7 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 *.font:	JetBrains Mono:pixelsize=16:antialias=true:autohint=true;
 
-! Alacritty Color Scheme in .Xresources format
+#Melange Color Theme
 
 ! Primary colors
 *foreground:   #ECE1D7
