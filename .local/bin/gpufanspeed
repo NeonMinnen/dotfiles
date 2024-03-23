@@ -1,3 +1,3 @@
 #! /usr/bin/bash
 
-sudo nvidia-settings -a GPUFanControlState=1 -a GPUTargetFanSpeed=40
+sudo nvidia-settings -a GPUFanControlState=1 -a GPUTargetFanSpeed=45

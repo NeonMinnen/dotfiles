@@ -5,6 +5,6 @@ Type=simple
 Environment=DISPLAY=:0
 Environment=XIDLEHOOK_SOCK=%t/xidlehook.socket
 ExecStartPre=/bin/sleep 30
-ExecStart=/usr/bin/xidlehook --not-when-audio --not-when-fullscreen --socket $XIDLEHOOK_SOCK --timer 300 '/usr/bin/slock' '' --timer 1800 'systemctl suspend' ''
+ExecStart=/usr/bin/xidlehook --not-when-audio --not-when-fullscreen --socket $XIDLEHOOK_SOCK --timer 300 '/usr/local/bin/slock' '' --timer 3600 'systemctl suspend' ''
 [Install]
 WantedBy=default.target

@@ -24,10 +24,17 @@ Plug 'https://github.com/mhinz/vim-startify'
 Plug 'https://github.com/nvim-treesitter/nvim-treesitter'
 Plug 'https://github.com/christoomey/vim-system-copy'
 Plug 'https://github.com/kdheepak/monochrome.nvim'
+Plug 'folke/tokyonight.nvim'
 Plug 'overcache/NeoSolarized'
 Plug 'danishprakash/vim-yami'
 Plug 'chriskempson/base16-vim'
+Plug 'rose-pine/neovim'
+Plug 'rebelot/kanagawa.nvim'
+Plug 'nyoom-engineering/oxocarbon.nvim'
+Plug 'AlexvZyl/nordic.nvim'
+Plug 'savq/melange-nvim' 
+Plug 'EdenEast/nightfox.nvim'
 call plug#end()
 
 set background=dark
-colorscheme base16-chalk
+colorscheme melange
