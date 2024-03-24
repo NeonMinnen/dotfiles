@@ -27,6 +27,7 @@ xset r rate 200 50 & #sets key speed
 nitrogen --restore & # this is to set an image background
 picom -b & #picom
 exec solaar --window hide & #Solaar for Mouse DPI Fix
+syncthingtray #exec syncthing tray
 dwmblocks & #exec dwmblocks
 dunst & #exec dunst
 # loop
